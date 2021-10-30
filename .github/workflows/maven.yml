@@ -28,5 +28,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
+    - name: Test with Maven
+      run: mvn test
+      
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
